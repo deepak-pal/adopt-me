@@ -1,15 +1,14 @@
-/* global React ReactDOM*/
-const Pet = (props) => {
-  return React.createElement("div", { id: "dogList" }, [React.createElement("h2", { id: "DogBreed" }, props.breadName), React.createElement("h3", { id: "alternativeBreedId" }, props.altbreedName), React.createElement("h3", { id: "location" }, props.loactionBelongs),
-  ]);
-};
+import React from "react";
+import ReactDOM from "react-dom";
+import Pet from "./Pet";
+
 
 const App = () => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, "Dog List"),
 
     React.createElement(Pet, {
-      breadName: "Affenpinscher",
+      breadName: "Affenpinscher??",
       altbreedName: "None",
       loactionBelongs: "Global",
     }),
