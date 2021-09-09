@@ -4,24 +4,13 @@ import Pet from "./Pet";
 
 
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Dog List"),
-
-    React.createElement(Pet, {
-      breadName: "Affenpinscher??",
-      altbreedName: "None",
-      loactionBelongs: "Global",
-    }),
-    React.createElement(Pet, {
-      breadName: "Afghan Hound",
-      altbreedName: "Tazi",
-      loactionBelongs: "Afghanistan",
-    }),
-    React.createElement(Pet, {
-      breadName: "Airedale Terrier",
-      altbreedName: "King of Terriers,",
-      loactionBelongs: "Aire Valley of Yorkshire",
-    }),
-  ]);
+    return (
+        <div>
+            <h1>List of Dog</h1>
+            <Pet name="Affenpinscher??" animal="None" breed="Global" />
+            <Pet name="Afghan Hound??" animal="Tazi" breed="Afghanistan" />
+            <Pet name="Airedale Terrier" animal="King of Terriers," breed="Aire Valley of Yorkshire" />
+        </div>
+    );
 };
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
